@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScoreTruco.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -6,11 +7,14 @@ namespace ScoreTruco
 {
     public partial class App : Application
     {
+        [Obsolete]
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var pagina = new MenuLateral();
+
+            MainPage = pagina;
         }
 
         protected override void OnStart()
