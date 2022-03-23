@@ -10,6 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace ScoreTruco.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
+    [Obsolete]
     public partial class MenuLateral : MasterDetailPage
     {
         public MenuLateral()

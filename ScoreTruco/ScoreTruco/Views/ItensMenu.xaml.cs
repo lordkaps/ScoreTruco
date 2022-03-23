@@ -17,9 +17,9 @@ namespace ScoreTruco.Views
             InitializeComponent();
         }
 
-        private void BotaoPontos(object sender, EventArgs e)
+        private void BtResetGeral(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Botao2(object sender, EventArgs e)

@@ -5,7 +5,7 @@
              x:Class="ScoreTruco.Views.ItensMenu">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Pontos" Clicked="BotaoPontos"/>
+            <Button Text="Limpar Pontos" Clicked="BtResetGeral"/>
             <Button Text="Botao 2" Clicked="Botao2"/>
         </StackLayout>
     </ContentPage.Content>

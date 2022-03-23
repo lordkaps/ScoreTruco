@@ -6,27 +6,38 @@
     <ContentPage.Content>
         <StackLayout Orientation="Horizontal" Spacing="0">
 
-            <StackLayout BackgroundColor="#288720" HorizontalOptions="FillAndExpand" >
-                <Button Text="1" Clicked="UmPonto"  CornerRadius="100" HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
-                <Button Text="3" Clicked="TrucoPontos" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
-                <Button Text="6" Clicked="SeisPontos" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
-                <Button Text="9" Clicked="NovePontos" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
-                <Button Text="12" Clicked="DozePontos" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
+            <StackLayout BackgroundColor="#288720" HorizontalOptions="FillAndExpand" Padding="0,10,0,0" >
+                <Button Text="1" Clicked="UmPontoVerde" FontSize="20" CornerRadius="100" HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
+                <Button Text="3" Clicked="TrucoPontosVerde" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
+                <Button Text="6" Clicked="SeisPontosVerde" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
+                <Button Text="9" Clicked="NovePontosVerde" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
+                <Button Text="12" Clicked="DozePontosVerde" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
 
                 <Label Text="Dulpa Verde" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-                <Label x:Name="LblDuplaVerde" Text="1" FontSize="48" TextColor="Red" HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
-
+                <Label x:Name="LblDuplaVerde" Text="0" FontSize="75" TextColor="Red" HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
+                
+                <StackLayout Orientation="Horizontal" Spacing="2">
+                    <Label Text="Vitórias: " FontSize="25" TextColor="White" HorizontalOptions="Start" Margin="15,0,0,0"/>
+                    <Label x:Name="LblVitoriasVerde" Text="0" FontSize="28" TextColor="Orange" HorizontalOptions="Start" Padding="8,0,0,10"/>
+                </StackLayout>
+                
             </StackLayout>
-            
-            <StackLayout BackgroundColor="#25259E" HorizontalOptions="FillAndExpand" >
-                <Button Text="1" Clicked="UmPonto" CornerRadius="100" HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
-                <Button Text="3" Clicked="TrucoPontos" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
-                <Button Text="6" Clicked="SeisPontos" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
-                <Button Text="9" Clicked="NovePontos" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
-                <Button Text="12" Clicked="DozePontos" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
+
+            <StackLayout BackgroundColor="#25259E" HorizontalOptions="FillAndExpand" Padding="0,10,0,0">
+                <Button Text="1" Clicked="UmPontoAzul" FontSize="20" CornerRadius="100" HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
+                <Button Text="3" Clicked="TrucoPontosAzul" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
+                <Button Text="6" Clicked="SeisPontosAzul" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
+                <Button Text="9" Clicked="NovePontosAzul" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
+                <Button Text="12" Clicked="DozePontosAzul" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
 
                 <Label Text="Dulpa Azul" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-                <Label x:Name="LblDuplaAzul" Text="1" FontSize="48" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
+                <Label x:Name="LblDuplaAzul" Text="0" FontSize="75" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
+                
+                <StackLayout Orientation="Horizontal" Spacing="2">
+                    <Label Text="Vitórias: " FontSize="25" TextColor="White" HorizontalOptions="Start" Margin="15,0,0,0"/>
+                    <Label x:Name="LblVitoriasAzul" Text="0" FontSize="28" TextColor="Orange" HorizontalOptions="Start" Padding="8,0,0,10"/>
+                </StackLayout>
+                
             </StackLayout>
             
         </StackLayout>
