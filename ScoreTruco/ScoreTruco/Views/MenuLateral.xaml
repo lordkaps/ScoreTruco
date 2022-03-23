@@ -5,7 +5,12 @@
                   x:Class="ScoreTruco.Views.MenuLateral">
     <!--Menu-->
     <MasterDetailPage.Master>
-        <local:ItensMenu />
+        <ContentPage Title="ItensMenu">
+            <StackLayout>
+                <Button Text="Limpar Pontos" Clicked="BtResetGeral"/>
+                <Button Text="Botao 2" Clicked="Botao2"/>
+            </StackLayout>
+        </ContentPage>
     </MasterDetailPage.Master>
 
     <!--Conteúdo-->

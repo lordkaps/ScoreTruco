@@ -25,6 +25,7 @@ namespace ScoreTruco.Views
             InitializeComponent();
             pontosDuplaUm = 0;
             pontosDuplaDois = 0;
+            //ToolbarItems.Add(new ToolbarItem("Teste", "TXT", ResetScore(true)));
         }
         #region botões dupla verde
         private void UmPontoVerde(object sender, EventArgs e)

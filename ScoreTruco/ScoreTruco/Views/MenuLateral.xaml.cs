@@ -17,5 +17,16 @@ namespace ScoreTruco.Views
         {
             InitializeComponent();
         }
+
+        private void BtResetGeral(object sender, EventArgs e)
+        {
+            Detail = new NavigationPage(new Principal());
+            IsPresented = false;
+        }
+
+        private void Botao2(object sender, EventArgs e)
+        {
+
+        }
     }
 }
