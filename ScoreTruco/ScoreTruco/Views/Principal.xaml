@@ -13,7 +13,7 @@
                 <Button Text="9" Clicked="NovePontosVerde" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
                 <Button Text="12" Clicked="DozePontosVerde" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65F58C" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
 
-                <Label Text="Dulpa Verde" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Dupla Verde" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
                 <Label x:Name="LblDuplaVerde" Text="0" FontSize="75" TextColor="Red" HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
                 
                 <StackLayout Orientation="Horizontal" Spacing="2">
@@ -30,7 +30,7 @@
                 <Button Text="9" Clicked="NovePontosAzul" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
                 <Button Text="12" Clicked="DozePontosAzul" FontSize="20" CornerRadius="100"  HorizontalOptions="CenterAndExpand" BorderColor="#65EDF5" BackgroundColor="#172819" BorderWidth="2.5" TextColor="White"/>
 
-                <Label Text="Dulpa Azul" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Dupla Azul" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
                 <Label x:Name="LblDuplaAzul" Text="0" FontSize="75" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
                 
                 <StackLayout Orientation="Horizontal" Spacing="2">
