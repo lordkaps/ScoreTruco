@@ -2,7 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Pontos"
+             xmlns:models="clr-namespace:ScoreTruco.Models"
              x:Class="ScoreTruco.Views.Principal">
+    <ContentPage.BindingContext>
+        <models:PrincipalModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout Orientation="Horizontal" Spacing="0">
 

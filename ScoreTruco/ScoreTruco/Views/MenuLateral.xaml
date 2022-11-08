@@ -7,8 +7,9 @@
     <MasterDetailPage.Master>
         <ContentPage Title="ItensMenu">
             <StackLayout>
-                <Button Text="Limpar Pontos" Clicked="BtResetGeral"/>
-                <Button Text="Botao 2" Clicked="Botao2"/>
+                <Button Text="Começar Novo Jogo" Clicked="BtResetGeral"/>
+                <Button Text="Limpar pontos" Clicked="BtLimpaPontos"/>
+                <Button Text="Limpar Partida" Clicked="BtLimpaPartida"/>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

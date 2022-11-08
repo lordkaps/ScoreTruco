@@ -24,7 +24,12 @@ namespace ScoreTruco.Views
             IsPresented = false;
         }
 
-        private void Botao2(object sender, EventArgs e)
+        private void BtLimpaPontos(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void BtLimpaPartida(object sender, EventArgs e)
         {
 
         }
