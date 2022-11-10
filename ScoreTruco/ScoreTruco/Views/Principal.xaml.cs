@@ -1,10 +1,5 @@
 ﻿using ScoreTruco.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,45 +13,41 @@ namespace ScoreTruco.Views
         public Principal()
         {
             InitializeComponent();
-            if(BindingContext is Models.PrincipalModel model)
-            {
-                principalModel = model;
-            }
-
+            principalModel = new PrincipalModel();
         }
         #region botões dupla verde
         private void UmPontoVerde(object sender, EventArgs e)
         {
-            principalModel.pontosDuplaUm += 1;
-            LblDuplaVerde.Text = principalModel.pontosDuplaUm.ToString();
+            principalModel.PontosDuplaUm += 1;
+            LblDuplaVerde.Text = principalModel.PontosDuplaUm.ToString();
             MensagemGanhador();
         }
 
         private void TrucoPontosVerde(object sender, EventArgs e)
         {
-            principalModel.pontosDuplaUm += 3;
-            LblDuplaVerde.Text = principalModel.pontosDuplaUm.ToString();
+            principalModel.PontosDuplaUm += 3;
+            LblDuplaVerde.Text = principalModel.PontosDuplaUm.ToString();
             MensagemGanhador();
         }
 
         private void SeisPontosVerde(object sender, EventArgs e)
         {
-            principalModel.pontosDuplaUm += 6;
-            LblDuplaVerde.Text = principalModel.pontosDuplaUm.ToString();
+            principalModel.PontosDuplaUm += 6;
+            LblDuplaVerde.Text = principalModel.PontosDuplaUm.ToString();
             MensagemGanhador();
         }
 
         private void NovePontosVerde(object sender, EventArgs e)
         {
-            principalModel.pontosDuplaUm += 9;
-            LblDuplaVerde.Text = principalModel.pontosDuplaUm.ToString();
+            principalModel.PontosDuplaUm += 9;
+            LblDuplaVerde.Text = principalModel.PontosDuplaUm.ToString();
             MensagemGanhador();
         }
 
         private void DozePontosVerde(object sender, EventArgs e)
         {
-            principalModel.pontosDuplaUm += 12;
-            LblDuplaVerde.Text = principalModel.pontosDuplaUm.ToString();
+            principalModel.PontosDuplaUm += 12;
+            LblDuplaVerde.Text = principalModel.PontosDuplaUm.ToString();
             MensagemGanhador();
         }
         #endregion
@@ -64,92 +55,93 @@ namespace ScoreTruco.Views
         #region botões dupla azul
         private void UmPontoAzul(object sender, EventArgs e)
         {
-            principalModel.pontosDuplaDois += 1;
-            LblDuplaAzul.Text = principalModel.pontosDuplaDois.ToString();
+            principalModel.PontosDuplaDois += 1;
+            LblDuplaAzul.Text = principalModel.PontosDuplaDois.ToString();
             MensagemGanhador();
         }
 
         private void TrucoPontosAzul(object sender, EventArgs e)
         {
-                principalModel.pontosDuplaDois += 3;
-                LblDuplaAzul.Text = principalModel.pontosDuplaDois.ToString();
+            principalModel.PontosDuplaDois += 3;
+            LblDuplaAzul.Text = principalModel.PontosDuplaDois.ToString();
             MensagemGanhador();
         }
 
         private void SeisPontosAzul(object sender, EventArgs e)
         {
 
-            principalModel.pontosDuplaDois += 6;
-                LblDuplaAzul.Text = principalModel.pontosDuplaDois.ToString();
+            principalModel.PontosDuplaDois += 6;
+            LblDuplaAzul.Text = principalModel.PontosDuplaDois.ToString();
             MensagemGanhador();
         }
 
         private void NovePontosAzul(object sender, EventArgs e)
         {
-            principalModel.pontosDuplaDois += 9;
-                LblDuplaAzul.Text = principalModel.pontosDuplaDois.ToString();
+            principalModel.PontosDuplaDois += 9;
+            LblDuplaAzul.Text = principalModel.PontosDuplaDois.ToString();
             MensagemGanhador();
         }
 
         private void DozePontosAzul(object sender, EventArgs e)
         {
-                principalModel.pontosDuplaDois += 12;
-                LblDuplaAzul.Text = principalModel.pontosDuplaDois.ToString();
+            principalModel.PontosDuplaDois += 12;
+            LblDuplaAzul.Text = principalModel.PontosDuplaDois.ToString();
             MensagemGanhador();
         }
         #endregion
 
         protected void MensagemGanhador()
         {
-            principalModel.duplaVerdeWin = principalModel.pontosDuplaUm >= 12;
-            principalModel.duplaAzulWin = principalModel.pontosDuplaDois >= 12;
+            principalModel.DuplaVerdeWin = principalModel.PontosDuplaUm >= 12;
+            principalModel.DuplaAzulWin = principalModel.PontosDuplaDois >= 12;
 
 
-                if (principalModel.duplaVerdeWin || principalModel.duplaAzulWin)
-                {
-                    DisplayAlert("Fim de Jogo!", $@"A dupla {Ganhador()} ganhou!   
-                 Verde {principalModel.pontosDuplaUm} x {principalModel.pontosDuplaDois} Azul",
-                    "Ok");
-                    FimPartida();
-                }
-            
+            if (principalModel.DuplaVerdeWin || principalModel.DuplaAzulWin)
+            {
+                DisplayAlert("Fim de Jogo!", $@"A dupla {Ganhador()} ganhou!   
+                 Verde {principalModel.PontosDuplaUm} x {principalModel.PontosDuplaDois} Azul",
+                "Ok");
+                FimPartida();
+            }
+
         }
 
         protected string Ganhador()
         {
-                if (principalModel.duplaVerdeWin)
-                {
-                    return "Verde";
-                }
-                if (principalModel.duplaAzulWin)
-                {
-                    return "Azul";
-                }
-            principalModel.duplaAzulWin = false;
-            principalModel.duplaVerdeWin = false;
+            if (principalModel.DuplaVerdeWin)
+            {
+                return "Verde";
+            }
+            if (principalModel.DuplaAzulWin)
+            {
+                return "Azul";
+            }
+            principalModel.DuplaAzulWin = false;
+            principalModel.DuplaVerdeWin = false;
             return "";
         }
 
         protected void FimPartida()
         {
             ResetScore();
-            if (principalModel.duplaVerdeWin) principalModel.vitoriasVerde++;
-            if (principalModel.duplaAzulWin) principalModel.vitoriasAzul++;
+            if (principalModel.DuplaVerdeWin) principalModel.VitoriasVerde++;
+            if (principalModel.DuplaAzulWin) principalModel.VitoriasAzul++;
 
-            LblVitoriasAzul.Text = principalModel.vitoriasAzul.ToString();
-            LblVitoriasVerde.Text = principalModel.vitoriasVerde.ToString();
+            LblVitoriasAzul.Text = principalModel.VitoriasAzul.ToString();
+            LblVitoriasVerde.Text = principalModel.VitoriasVerde.ToString();
         }
+
         public void ResetScore(bool resetgeral = false)
         {
-            principalModel.pontosDuplaUm = 0;
-            principalModel.pontosDuplaDois = 0;
+            principalModel.PontosDuplaUm = 0;
+            principalModel.PontosDuplaDois = 0;
             LblDuplaAzul.Text = "0";
             LblDuplaVerde.Text = "0";
 
             if (resetgeral)
             {
-                principalModel.vitoriasAzul = 0;
-                principalModel.vitoriasVerde = 0;
+                principalModel.VitoriasAzul = 0;
+                principalModel.VitoriasVerde = 0;
             }
         }
     }
