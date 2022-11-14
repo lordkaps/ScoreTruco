@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:ScoreTruco.Models"
+             x:Class="ScoreTruco.Views.About">
+    <ContentPage.BindingContext>
+        <models:AboutModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black" Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="LabelTitle" Text="{Binding Title}" FontSize="25" FontAttributes="Bold" TextColor="White"/>
+                <Label x:Name="LabelVersion" Text="{Binding Version}" FontSize="22" FontAttributes="Italic" TextColor="White"/>
+            </StackLayout>
+            <Label x:Name="label1" Text="{Binding Message}"  FontSize="Large"  HorizontalOptions="Start" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+            <Grid >
+                <ImageButton Grid.Row="1" Source="button_start.png" HorizontalOptions="Center" VerticalOptions="End" 
+                                     Clicked="Btlink" BackgroundColor="Transparent" WidthRequest="250" HeightRequest="70" Aspect="Fill" IsEnabled="True" />
+                <Label Grid.Row="1" x:Name="labelButton" Text="Link"  FontSize="Large"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Black" InputTransparent="True" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

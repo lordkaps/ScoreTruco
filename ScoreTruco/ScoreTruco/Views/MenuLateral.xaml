@@ -18,8 +18,8 @@
                                      Clicked="BtResetGeral" BackgroundColor="Transparent" WidthRequest="250" HeightRequest="70" Aspect="Fill" IsEnabled="True" />
                         <Label Grid.Row="0" x:Name="label1" Text="Novo Jogo"  FontSize="Large"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Black" InputTransparent="True" />
                         <ImageButton Grid.Row="1" Source="button_start.png" HorizontalOptions="Center" VerticalOptions="Center" 
-                                     Clicked="BtLimpaPontos" BackgroundColor="Transparent" WidthRequest="250" HeightRequest="70" Aspect="Fill" IsEnabled="True" />
-                        <Label Grid.Row="1" x:Name="label2" Text="Limpar pontos"  FontSize="Large"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Black" />
+                                     Clicked="BtSobre" BackgroundColor="Transparent" WidthRequest="250" HeightRequest="70" Aspect="Fill" IsEnabled="True" />
+                        <Label Grid.Row="1" x:Name="label2" Text="Sobre"  FontSize="Large"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Black" InputTransparent="True"/>
                     </Grid>
                 </Grid>
             </StackLayout>

@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,9 +19,9 @@ namespace ScoreTruco.Views
             IsPresented = false;
         }
 
-        private void BtLimpaPontos(object sender, EventArgs e)
+        private void BtSobre(object sender, EventArgs e)
         {
-
+            Detail = new NavigationPage(new About());
         }
     }
 }
